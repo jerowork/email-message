@@ -8,5 +8,6 @@ use Exception;
 
 class EmailMessageException extends Exception
 {
-    public const INVALID_EMAIL = 1000;
+    public const INVALID_EMAIL     = 1000;
+    public const INVALID_BODY_TYPE = 1010;
 }
