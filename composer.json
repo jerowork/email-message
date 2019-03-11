@@ -1,0 +1,40 @@
+{
+    "name": "jerowork/email-message",
+    "type": "library",
+    "description": "PHP 7.2+ value object for email messages.",
+    "keywords": [
+        "value-object",
+        "email",
+        "message",
+        "domain-driven-design",
+        "ddd"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeroen de Graaf",
+            "email": "hello@jero.work",
+            "homepage": "https://jero.work"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "ext-json": "*"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Jerowork\\EmailMessage\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jerowork\\EmailMessage\\Test\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    }
+}
