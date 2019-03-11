@@ -15,4 +15,9 @@ final class InvalidArgumentException extends EmailMessageException
     {
         return new self(sprintf('Invalid body type %s', $type), static::INVALID_BODY_TYPE);
     }
+
+    public static function invalidAddressee(string $addressee) : InvalidArgumentException
+    {
+        return new self(sprintf('Invalid addressee %s', $addressee), static::INVALID_ADDRESSEE);
+    }
 }
